@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const userSchema= new mongoose.Schema({
     fullName:{
         type:String,
@@ -20,7 +21,7 @@ const userSchema= new mongoose.Schema({
         required:true,
         enum:["male","female"]
     },
-    gender:{
+    profilePic:{
         type:String,
         default:"",
     }
